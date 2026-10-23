@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พี่โน้ต | Phi Note - Personal Portfolio & Profile</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#465fff',
+                            600: '#3648db',
+                            700: '#2b38b0',
+                            900: '#1e2468',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/60 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">N</span>
+                <span>พี่โน้ต <span class="text-brand-500 text-sm font-normal">.profile</span></span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-500 transition-colors">เกี่ยวกับ</a>
+                <a href="#skills" class="hover:text-brand-500 transition-colors">ความเชี่ยวชาญ</a>
+                <a href="#projects" class="hover:text-brand-500 transition-colors">ผลงานเด่น</a>
+                <a href="#contact" class="hover:text-brand-500 transition-colors">ติดต่อเรา</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full text-white bg-brand-500 hover:bg-brand-600 transition shadow-sm hover:shadow">
+                    ทักทายพี่โน้ต
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="about" class="relative overflow-hidden py-20 sm:py-28 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-50 text-brand-600 text-xs font-semibold tracking-wide border border-brand-100">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> พร้อมร่วมงาน & แบ่งปันประสบการณ์
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                            สวัสดีครับ ผม <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-indigo-600">"พี่โน้ต"</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            ยินดีต้อนรับสู่พื้นที่ส่วนตัวสำหรับแชร์ประสบการณ์ ผลงาน และโปรเจกต์ที่ตั้งใจสร้างสรรค์ มุ่งมั่นพัฒนาสิ่งใหม่ๆ ด้วยเทคโนโลยีและความคิดสร้างสรรค์
+                        </p>
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#projects" class="px-6 py-3 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 transition shadow-md flex items-center gap-2">
+                                <i data-lucide="folder-kanban" class="w-4 h-4"></i> ดูผลงาน
+                            </a>
+                            <a href="#contact" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition shadow-sm flex items-center gap-2">
+                                <i data-lucide="mail" class="w-4 h-4"></i> ช่องทางติดต่อ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-purple-500/20 rounded-3xl rotate-6 transform transition-transform group-hover:rotate-12 duration-300"></div>
+                            <div class="absolute inset-0 rounded-3xl bg-white shadow-xl border border-slate-100 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+                                <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-brand-500 to-indigo-600 text-white flex items-center justify-center text-4xl font-bold shadow-lg mb-4">
+                                    พี่โน้ต
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900">Phi Note</h3>
+                                <p class="text-sm text-slate-500 mt-1">Creator & Developer</p>
+                                <div class="mt-4 flex gap-2">
+                                    <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-600">Tech Enthusiast</span>
+                                    <span class="px-2.5 py-1 text-xs rounded-md bg-brand-50 text-brand-600">Problem Solver</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase tracking-widest text-brand-500 font-bold mb-2">EXPERTISE & SKILLS</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">ความเชี่ยวชาญและทักษะ</h3>
+                    <p class="text-slate-500 mt-3 text-sm sm:text-base">สิ่งที่ถนัดและเครื่องมือที่ใช้ในการสร้างสรรค์โปรเจกต์</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-lg transition group">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:bg-brand-500 group-hover:text-white transition">
+                            <i data-lucide="code" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Web & Software Dev</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            พัฒนาเว็บไซต์และแอปพลิเคชันที่ใช้งานง่าย ปลอดภัย และมีประสิทธิภาพสูง
+                        </p>
+                        <ul class="text-xs space-y-1.5 text-slate-500">
+                            <li class="flex items-center gap-1.5">✓ Full-stack Development</li>
+                            <li class="flex items-center gap-1.5">✓ API & Database Systems</li>
+                            <li class="flex items-center gap-1.5">✓ Modern Web Frameworks</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-lg transition group">
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition">
+                            <i data-lucide="server" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">DevOps & Cloud</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            การจัดการระบบโครงสร้างพื้นฐาน คลาวด์ และระบบออโตเมชันสำหรับการใช้งานจริง
+                        </p>
+                        <ul class="text-xs space-y-1.5 text-slate-500">
+                            <li class="flex items-center gap-1.5">✓ Docker & Containerization</li>
+                            <li class="flex items-center gap-1.5">✓ CI/CD Automation</li>
+                            <li class="flex items-center gap-1.5">✓ System Monitoring & Security</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-lg transition group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Creative & Solution</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            ออกแบบโซลูชันเพื่อตอบโจทย์ปัญหาจริงและการนำนวัตกรรมมาประยุกต์ใช้
+                        </p>
+                        <ul class="text-xs space-y-1.5 text-slate-500">
+                            <li class="flex items-center gap-1.5">✓ UI/UX Architecture</li>
+                            <li class="flex items-center gap-1.5">✓ Digital Transformation</li>
+                            <li class="flex items-center gap-1.5">✓ Tech Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase tracking-widest text-brand-500 font-bold mb-2">PORTFOLIO & WORKS</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">ผลงานและโปรเจกต์เด่น</h3>
+                    <p class="text-slate-500 mt-3 text-sm sm:text-base">ตัวอย่างโปรเจกต์ที่ผ่านมาของพี่โน้ต</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col">
+                        <div class="h-44 bg-gradient-to-tr from-brand-600 to-indigo-700 p-6 flex flex-col justify-end text-white">
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-white/20 backdrop-blur w-fit mb-2">Web Application</span>
+                            <h4 class="text-xl font-bold">Portal & Dashboard Platform</h4>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                ระบบบริหารจัดการข้อมูลแบบบูรณาการ ออกแบบหน้าบ้านสวยงาม ใช้งานง่ายและตอบสนองได้รวดเร็ว
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100">
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Tailwind CSS</span>
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Modern JS</span>
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col">
+                        <div class="h-44 bg-gradient-to-tr from-slate-800 to-slate-900 p-6 flex flex-col justify-end text-white">
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-white/20 backdrop-blur w-fit mb-2">Automation & Tools</span>
+                            <h4 class="text-xl font-bold">Smart Workflow Automation</h4>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                ระบบอัตโนมัติช่วยแจ้งเตือน รายงานสถานะ และประมวลผลข้อมูลประจำวันอย่างแม่นยำ
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100">
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Python</span>
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">APIs</span>
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Cron Jobs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col">
+                        <div class="h-44 bg-gradient-to-tr from-emerald-600 to-teal-700 p-6 flex flex-col justify-end text-white">
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-white/20 backdrop-blur w-fit mb-2">Infrastructure</span>
+                            <h4 class="text-xl font-bold">Cloud & NAS Solutions</h4>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                จัดการและปรับแต่งเซิร์ฟเวอร์ ระบบจัดเก็บข้อมูล รวมถึงความเสถียรและความปลอดภัยของระบบ
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100">
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Linux</span>
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Networking</span>
+                                <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-600">Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-3xl bg-gradient-to-tr from-brand-600 to-indigo-700 text-white p-8 sm:p-14 shadow-xl text-center relative overflow-hidden">
+                    <div class="relative z-10 space-y-6">
+                        <h3 class="text-3xl sm:text-4xl font-extrabold">ร่วมงานหรือพูดคุยกับพี่โน้ต</h3>
+                        <p class="text-brand-100 max-w-xl mx-auto text-base sm:text-lg">
+                            ยินดีให้คำปรึกษา แลกเปลี่ยนไอเดีย หรือพูดคุยเกี่ยวกับโปรเจกต์ใหม่ๆ สามารถติดต่อได้ทุกช่องทางครับ
+                        </p>
+                        
+                        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                            <a href="mailto:contact@example.com" class="px-6 py-3 rounded-full bg-white text-brand-600 font-semibold hover:bg-brand-50 transition shadow flex items-center gap-2">
+                                <i data-lucide="mail" class="w-4 h-4"></i> ส่งอีเมลหาพี่โน้ต
+                            </a>
+                            <a href="https://github.com" target="_blank" class="px-6 py-3 rounded-full bg-brand-700/60 hover:bg-brand-700 text-white border border-brand-400/30 transition flex items-center gap-2">
+                                <i data-lucide="github" class="w-4 h-4"></i> GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 text-slate-400 text-center text-sm border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 พี่โน้ต (Phi Note). All rights reserved. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
