@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warut Note (พี่โน้ต) | Personal Portfolio & Profile</title>
+    <title>นายวรุตม์ ช้างเถื่อน (พี่โน้ต) | นักวิชาการคอมพิวเตอร์ VRU</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,13 +17,14 @@
                         sans: ['Kanit', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
+                        vru: {
                             50: '#eef2ff',
                             100: '#e0e7ff',
                             500: '#465fff',
                             600: '#3648db',
                             700: '#2b38b0',
-                            900: '#1e2468',
+                            800: '#1e2468',
+                            green: '#008b47'
                         }
                     }
                 }
@@ -35,30 +36,30 @@
             font-family: 'Kanit', sans-serif;
         }
         .glass {
-            background: rgba(255, 255, 255, 0.88);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-vru-500 selection:text-white">
 
     <!-- Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/60 transition-all duration-300">
+    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/80 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
-                <span class="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">N</span>
-                <span>Warut Note <span class="text-brand-500 text-sm font-normal">(พี่โน้ต)</span></span>
+            <a href="#" class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-vru-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">ว</span>
+                <span>วรุตม์ ช้างเถื่อน <span class="text-vru-500 text-sm font-normal">(พี่โน้ต)</span></span>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-brand-500 transition-colors">เกี่ยวกับ</a>
-                <a href="#education" class="hover:text-brand-500 transition-colors">ประวัติ & การศึกษา</a>
-                <a href="#experience" class="hover:text-brand-500 transition-colors">ประสบการณ์</a>
-                <a href="#contact" class="hover:text-brand-500 transition-colors">ติดต่อเรา</a>
+                <a href="#about" class="hover:text-vru-500 transition-colors">เกี่ยวกับ</a>
+                <a href="#work" class="hover:text-vru-500 transition-colors">ตำแหน่ง & งานรับผิดชอบ</a>
+                <a href="#education" class="hover:text-vru-500 transition-colors">การศึกษา & ประวัติ</a>
+                <a href="#contact" class="hover:text-vru-500 transition-colors">ติดต่อ</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="https://www.facebook.com/note1724" target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm hover:shadow gap-2">
-                    <i data-lucide="facebook" class="w-4 h-4"></i> Facebook พี่โน้ต
+                <a href="mailto:warut@vru.ac.th" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full text-white bg-vru-500 hover:bg-vru-600 transition shadow-sm hover:shadow gap-1.5">
+                    <i data-lucide="mail" class="w-4 h-4"></i> อีเมลบุคลากร
                 </a>
             </div>
         </div>
@@ -66,42 +67,46 @@
 
     <main class="pt-16">
         <!-- Hero Section -->
-        <section id="about" class="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100">
+        <section id="about" class="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-b from-white via-indigo-50/20 to-slate-50 border-b border-slate-100">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-50 text-brand-600 text-xs font-semibold tracking-wide border border-brand-100">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Digital Creator · อ่างทอง (Ang Thong)
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-vru-600 text-xs font-semibold tracking-wide border border-blue-100">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span> บุคลากร มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์
                         </div>
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-                            สวัสดีครับ ผม <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-indigo-600">Warut Note</span>
-                            <br class="hidden sm:inline"> <span class="text-3xl sm:text-4xl text-slate-700 font-bold">(พี่โน้ต)</span>
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                            นายวรุตม์ ช้างเถื่อน
+                            <br>
+                            <span class="text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-vru-500 to-indigo-600 font-bold">
+                                นักวิชาการคอมพิวเตอร์ (พี่โน้ต)
+                            </span>
                         </h1>
-                        <p class="text-lg sm:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                            Digital Creator ผู้มีประสบการณ์การทำงานด้านคอมพิวเตอร์และเทคโนโลยี จบการศึกษาคอมพิวเตอร์ธุรกิจจากมหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ ปัจจุบันอาศัยอยู่ที่จังหวัดอ่างทอง
+                        <p class="text-base sm:text-lg text-slate-600 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            สังกัด <strong>งานดิจิทัลและพัฒนาแพลตฟอร์ม สำนักวิทยบริการและเทคโนโลยีสารสนเทศ (ARIT)</strong> มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ ดูแลงานระบบสารสนเทศ การสื่อสารดิจิทัล แพลตฟอร์มคลังข้อมูล และบริการสนับสนุนการเรียนรู้
                         </p>
                         <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-                            <a href="https://www.facebook.com/note1724" target="_blank" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition shadow-md flex items-center gap-2">
-                                <i data-lucide="facebook" class="w-4 h-4"></i> ติดตามบน Facebook
+                            <a href="#work" class="px-6 py-3 rounded-xl bg-vru-500 text-white font-medium hover:bg-vru-600 transition shadow-md flex items-center gap-2">
+                                <i data-lucide="layers" class="w-4 h-4"></i> ขอบเขตงานที่รับผิดชอบ
                             </a>
-                            <a href="#experience" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition shadow-sm flex items-center gap-2">
-                                <i data-lucide="briefcase" class="w-4 h-4"></i> ดูประวัติการทำงาน
+                            <a href="https://www.facebook.com/note1724" target="_blank" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition shadow-sm flex items-center gap-2">
+                                <i data-lucide="facebook" class="w-4 h-4 text-blue-600"></i> Facebook พี่โน้ต
                             </a>
                         </div>
                     </div>
                     <div class="lg:col-span-5 flex justify-center">
                         <div class="relative w-64 h-64 sm:w-80 sm:h-80">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-purple-500/20 rounded-3xl rotate-6 transform transition-transform group-hover:rotate-12 duration-300"></div>
+                            <div class="absolute inset-0 bg-gradient-to-tr from-vru-500/20 to-purple-500/20 rounded-3xl rotate-6 transform transition-transform group-hover:rotate-12 duration-300"></div>
                             <div class="absolute inset-0 rounded-3xl bg-white shadow-xl border border-slate-100 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
                                 <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/674535248_26947234204880211_8700331235731372221_n.jpg?stp=dst-jpg_s320x320&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=eA5yaEvK2EgQ7kNvwEsm_EG&_nc_oc=AdoZoUwvzM7yH4RK2iKWUJwPXa20LPtZp8HoNcQxPUqPkWXVhiNQQS9Mg8U-id6RckU&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&oh=00_AQNYfwji6aT2PIakS5PeGAadQIZ3otvcaGVlQNBoCWzufg&oe=6AE0E15E" 
-                                     alt="Warut Note" 
-                                     onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Warut+Note&background=465fff&color=fff&size=200';"
-                                     class="w-32 h-32 rounded-full object-cover border-4 border-brand-100 shadow-md mb-3">
-                                <h3 class="text-xl font-bold text-slate-900">Warut Note</h3>
-                                <p class="text-sm text-slate-500">Digital Creator</p>
-                                <div class="mt-3 flex items-center gap-1.5 text-xs text-slate-500">
-                                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i>
-                                    <span>อ่างทอง, ประเทศไทย</span>
+                                     alt="วรุตม์ ช้างเถื่อน" 
+                                     onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Warut+Changthuan&background=465fff&color=fff&size=200';"
+                                     class="w-32 h-32 rounded-full object-cover border-4 border-vru-100 shadow-md mb-3">
+                                <h3 class="text-xl font-bold text-slate-900">นายวรุตม์ ช้างเถื่อน</h3>
+                                <p class="text-xs text-vru-600 font-medium">นักวิชาการคอมพิวเตอร์</p>
+                                <p class="text-xs text-slate-500 mt-1">สำนักวิทยบริการและเทคโนโลยีสารสนเทศ</p>
+                                <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-xs text-slate-600">
+                                    <i data-lucide="mail" class="w-3 h-3 text-vru-500"></i>
+                                    <span>warut@vru.ac.th</span>
                                 </div>
                             </div>
                         </div>
@@ -110,33 +115,91 @@
             </div>
         </section>
 
-        <!-- Education & Background Section -->
-        <section id="education" class="py-20 bg-white">
+        <!-- Current Role & Responsibilities Section -->
+        <section id="work" class="py-20 bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <h2 class="text-xs uppercase tracking-widest text-brand-500 font-bold mb-2">BACKGROUND & EDUCATION</h2>
-                    <h3 class="text-3xl font-extrabold text-slate-900">ประวัติและการศึกษา</h3>
-                    <p class="text-slate-500 mt-3 text-sm sm:text-base">เส้นทางการศึกษาและจุดเริ่มต้นสายงานด้านคอมพิวเตอร์และธุรกิจ</p>
+                    <h2 class="text-xs uppercase tracking-widest text-vru-500 font-bold mb-2">RESPONSIBILITIES & PLATFORM</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">ตำแหน่งและบทบาทหน้าที่</h3>
+                    <p class="text-slate-500 mt-3 text-sm sm:text-base">ภารกิจการพัฒนาระบบดิจิทัลและบริการสารสนเทศ มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ฯ</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Task 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-vru-200 hover:shadow-lg transition group">
+                        <div class="w-12 h-12 rounded-xl bg-vru-50 text-vru-600 flex items-center justify-center mb-6 group-hover:bg-vru-500 group-hover:text-white transition">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">งานดิจิทัล & แพลตฟอร์ม</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            ดูแล พัฒนา และบริหารจัดการระบบคลังข้อมูลดิจิทัล แพลตฟอร์มสารสนเทศ และเว็บไซต์ของสำนักวิทยบริการฯ
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-500 border-t border-slate-200/60 pt-4">
+                            <li class="flex items-center gap-1.5">✓ ระบบคลังข้อมูลและแพลตฟอร์มการเรียนรู้</li>
+                            <li class="flex items-center gap-1.5">✓ ดูแลและประสานงานระบบสารสนเทศห้องสมุด</li>
+                        </ul>
+                    </div>
+
+                    <!-- Task 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-vru-200 hover:shadow-lg transition group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i data-lucide="megaphone" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">การสื่อสาร & ประชาสัมพันธ์</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            เผยแพร่ข่าวสารทางวิชาการ กิจกรรม รายงานประจำปี และนวัตกรรมสนับสนุนการเรียนรู้ของมหาวิทยาลัย
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-500 border-t border-slate-200/60 pt-4">
+                            <li class="flex items-center gap-1.5">✓ ข่าวสารและรายงานผลการดำเนินงาน</li>
+                            <li class="flex items-center gap-1.5">✓ เครือข่ายห้องสมุดมนุษย์แห่งประเทศไทย</li>
+                        </ul>
+                    </div>
+
+                    <!-- Task 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-vru-200 hover:shadow-lg transition group">
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">สนับสนุนกิจกรรม & สิ่งแวดล้อม</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            ร่วมผลักดันโครงการองค์กรคุณธรรม และโครงการสนับสนุนการลดก๊าซเรือนกระจก (LESS) สู่ Green University
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-500 border-t border-slate-200/60 pt-4">
+                            <li class="flex items-center gap-1.5">✓ ขับเคลื่อนโครงการ ARIT คัดแยกขยะรีไซเคิล</li>
+                            <li class="flex items-center gap-1.5">✓ กิจกรรมคุณธรรมและความโปร่งใส EIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Background Section -->
+        <section id="education" class="py-20 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase tracking-widest text-vru-500 font-bold mb-2">EDUCATION & EXPERIENCES</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">ประวัติการศึกษาและการทำงาน</h3>
+                    <p class="text-slate-500 mt-3 text-sm sm:text-base">ภูมิหลังทางการศึกษาและประสบการณ์การปฏิบัติงาน</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Education Card 1 -->
-                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-lg transition flex gap-5">
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0">
+                    <!-- Edu 1 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-vru-50 text-vru-600 flex items-center justify-center flex-shrink-0">
                             <i data-lucide="graduation-cap" class="w-6 h-6"></i>
                         </div>
                         <div class="space-y-2">
-                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-brand-100 text-brand-700">ปริญญาตรี</span>
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-vru-100 text-vru-700">ปริญญาตรี</span>
                             <h4 class="text-lg font-bold text-slate-900">มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์</h4>
-                            <p class="text-brand-600 font-medium text-sm">สาขาวิชาคอมพิวเตอร์ธุรกิจ</p>
+                            <p class="text-vru-600 font-medium text-sm">สาขาวิชาคอมพิวเตอร์ธุรกิจ</p>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                ศึกษาด้านการประยุกต์ใช้เทคโนโลยีสารสนเทศ ซอฟต์แวร์ และการจัดการข้อมูลเพื่อธุรกิจ
+                                พื้นฐานด้านเทคโนโลยีสารสนเทศ ซอฟต์แวร์ และระบบธุรกิจดิจิทัล
                             </p>
                         </div>
                     </div>
 
-                    <!-- Education Card 2 -->
-                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-lg transition flex gap-5">
+                    <!-- Edu 2 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex gap-5">
                         <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0">
                             <i data-lucide="book-open" class="w-6 h-6"></i>
                         </div>
@@ -145,58 +208,39 @@
                             <h4 class="text-lg font-bold text-slate-900">สถาบันเทคโนโลยีราชมงคล วิทยาเขตสุพรรณบุรี</h4>
                             <p class="text-purple-600 font-medium text-sm">Rajamangala Institute of Technology</p>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                ปูพื้นฐานด้านสายอาชีพ เทคนิค และทักษะการปฏิบัติการด้านเทคโนโลยี
+                                ทักษะวิชาชีพด้านเทคนิคและระบบปฏิบัติการ
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="py-20 bg-slate-50 border-t border-slate-100">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <h2 class="text-xs uppercase tracking-widest text-brand-500 font-bold mb-2">CAREER & WORKPLACE</h2>
-                    <h3 class="text-3xl font-extrabold text-slate-900">สถานที่และประสบการณ์การทำงาน</h3>
-                    <p class="text-slate-500 mt-3 text-sm sm:text-base">ประวัติการปฏิบัติงานที่ผ่านมาของพี่โน้ต</p>
-                </div>
-
-                <div class="max-w-3xl mx-auto space-y-6">
-                    <!-- Workplace 1 -->
-                    <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="building-2" class="w-7 h-7"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-slate-900">โรงพยาบาลวิเศษชัยชาญ</h4>
-                                <p class="text-slate-500 text-sm mt-0.5 flex items-center gap-1.5">
-                                    <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> อำเภอวิเศษชัยชาญ จังหวัดอ่างทอง
-                                </p>
-                            </div>
+                    <!-- Exp 1 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="landmark" class="w-6 h-6"></i>
                         </div>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                            ประสบการณ์ปฏิบัติงาน
-                        </span>
+                        <div class="space-y-2">
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700">ปัจจุบัน</span>
+                            <h4 class="text-lg font-bold text-slate-900">มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์</h4>
+                            <p class="text-slate-600 font-medium text-sm">สำนักวิทยบริการและเทคโนโลยีสารสนเทศ (งานดิจิทัลและพัฒนาแพลตฟอร์ม)</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                นักวิชาการคอมพิวเตอร์ ดูแลระบบแพลตฟอร์มและบริการสารสนเทศ
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Role 2 -->
-                    <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="sparkles" class="w-7 h-7"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-slate-900">Digital Creator & Content</h4>
-                                <p class="text-slate-500 text-sm mt-0.5 flex items-center gap-1.5">
-                                    <i data-lucide="globe" class="w-3.5 h-3.5"></i> แบ่งปันเรื่องราวและกิจกรรมประจำวันผ่าน Social Media
-                                </p>
-                            </div>
+                    <!-- Exp 2 -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm flex gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="hospital" class="w-6 h-6"></i>
                         </div>
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">
-                            ปัจจุบัน
-                        </span>
+                        <div class="space-y-2">
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">ประสบการณ์</span>
+                            <h4 class="text-lg font-bold text-slate-900">โรงพยาบาลวิเศษชัยชาญ</h4>
+                            <p class="text-slate-600 font-medium text-sm">อำเภอวิเศษชัยชาญ จังหวัดอ่างทอง</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                ประสบการณ์การปฏิบัติงานในหน่วยงานสาธารณสุข
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,16 +249,22 @@
         <!-- Contact Section -->
         <section id="contact" class="py-20 bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="rounded-3xl bg-gradient-to-tr from-brand-600 to-indigo-700 text-white p-8 sm:p-14 shadow-xl text-center relative overflow-hidden">
+                <div class="rounded-3xl bg-gradient-to-tr from-vru-500 to-indigo-700 text-white p-8 sm:p-14 shadow-xl text-center relative overflow-hidden">
                     <div class="relative z-10 space-y-6">
-                        <h3 class="text-3xl sm:text-4xl font-extrabold">ติดต่อพูดคุยกับพี่โน้ต</h3>
-                        <p class="text-brand-100 max-w-xl mx-auto text-base sm:text-lg">
-                            สามารถติดต่อหรือติดตามผลงานและเรื่องราวของ Warut Note (พี่โน้ต) ได้ทาง Facebook โดยตรงครับ
+                        <h3 class="text-3xl sm:text-4xl font-extrabold">ช่องทางการติดต่อ</h3>
+                        <p class="text-blue-100 max-w-xl mx-auto text-base sm:text-lg">
+                            สามารถติดต่อราชการ งานระบบดิจิทัล หรือพูดคุยกับพี่โน้ตได้ตามช่องทางด้านล่างนี้ครับ
                         </p>
                         
                         <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
-                            <a href="https://www.facebook.com/note1724" target="_blank" class="px-8 py-3.5 rounded-full bg-white text-blue-600 font-semibold hover:bg-slate-50 transition shadow-lg flex items-center gap-2 text-base">
-                                <i data-lucide="facebook" class="w-5 h-5"></i> ไปที่ Facebook พี่โน้ต (Warut Note)
+                            <a href="mailto:warut@vru.ac.th" class="px-7 py-3 rounded-full bg-white text-vru-600 font-semibold hover:bg-slate-50 transition shadow-lg flex items-center gap-2">
+                                <i data-lucide="mail" class="w-4 h-4"></i> warut@vru.ac.th
+                            </a>
+                            <a href="https://www.facebook.com/note1724" target="_blank" class="px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white border border-blue-400/40 transition shadow-lg flex items-center gap-2">
+                                <i data-lucide="facebook" class="w-4 h-4"></i> Facebook Warut Note
+                            </a>
+                            <a href="https://lib.vru.ac.th" target="_blank" class="px-7 py-3 rounded-full bg-vru-700/60 hover:bg-vru-700 text-white border border-blue-300/30 transition flex items-center gap-2">
+                                <i data-lucide="globe" class="w-4 h-4"></i> สำนักวิทยบริการฯ (ARIT VRU)
                             </a>
                         </div>
                     </div>
@@ -226,7 +276,7 @@
     <!-- Footer -->
     <footer class="py-8 bg-slate-900 text-slate-400 text-center text-sm border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-4">
-            <p>© 2026 Warut Note (พี่โน้ต). All rights reserved. Hosted on GitHub Pages.</p>
+            <p>© 2026 นายวรุตม์ ช้างเถื่อน (พี่โน้ต) · สำนักวิทยบริการและเทคโนโลยีสารสนเทศ มรภ.วไลยอลงกรณ์ฯ</p>
         </div>
     </footer>
 
